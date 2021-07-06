@@ -112,12 +112,12 @@ function getOutcome() {
 		let energíaImpropia = `${elementsFromSector[element - 1]}2`
 
 		async function getSampleText() {
-			firstText = (await fetch(`./texts/${energíaPropia}.txt`))
+			firstText = (await fetch(`./assets/texts/${energíaPropia}.txt`))
 				.text()
 				.then(function (result) {
 					propiaText.innerHTML = result
 				})
-			secondText = (await fetch(`./texts/${energíaImpropia}.txt`))
+			secondText = (await fetch(`./assets/texts/${energíaImpropia}.txt`))
 				.text()
 				.then(function (result) {
 					impropiaText.innerHTML = `${result} <br><br> <button type="button" class="startFresh" onclick="startFresh()">Nueva Consulta</button>`
