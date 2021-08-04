@@ -52,7 +52,7 @@ body {
 	color: whitesmoke;
 	font-size: 1.4em;
 	font-family: 'Roboto', sans-serif;
-	gap: 7px;
+	gap: 9px;
 }
 
 .date > span {
@@ -60,17 +60,25 @@ body {
 	margin-left: -6px;
 }
 
-input {
+.fecha {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 7px;
+}
+
+select {
 	justify-content: center;
 	border-radius: 6px;
-	min-width: 8em;
+	width: fit-content;
 	border: 0.1em;
 	height: 1.8em;
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
 	font-size: 0.71em;
-	text-align: center;
 	line-height: 1.3em;
+	text-align-last: center;
+	text-align: center;
+	text-align: center;
 }
 
 button {
@@ -255,7 +263,7 @@ img {
 
 @media (max-width: 823px) and (orientation: landscape) {
 	.date {
-	  font-size: 1em;
+		font-size: 1em;
 	}
 	img {
 		max-width: 37vw;
@@ -273,5 +281,4 @@ img {
 		align-items: center;
 		flex-wrap: wrap;
 	}
-  }
-
+}

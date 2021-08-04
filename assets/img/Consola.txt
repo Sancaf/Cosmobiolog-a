@@ -1,0 +1,3 @@
+[Log] Live reload enabled. (127.0.0.1, line 215)
+> Elemento seleccionado
+< <img src="assets//img/img.png" alt="calendario" id="wheel">
